@@ -65,6 +65,7 @@ const loadAssets = async (): Promise<void> => {
         loader.add('drinking', '../assets/drinking.mp3')
         loader.add('gameOver', '../assets/gameOver.mp3')
         loader.add('victory', '../assets/victory.mp3')
+        loader.add('click', '../assets/click.mp3')
 
         loader.onComplete.once(() => {
             resolve();
@@ -101,6 +102,7 @@ function setup(): void {
     sound.volume("gameOver", 0.07)
     sound.volume("victory", 0.02)
     sound.volume("drinking", 0.3)
+    sound.volume("click", 0.2)
     
     bgc = new Background(Texture.from("background"), screenWidth, screenHeight)
     bgc.addDarkFilter()
@@ -171,6 +173,7 @@ function startMessage() {
 
     beatles.interactive = true
     beatles.on("click", () => {
+        sound.play('click')
         classicMusic.style = {...bandsStyles}
         beatles.style = {...bandsStyles, dropShadow: true}
         preferedMusic = "beatles"
@@ -178,6 +181,7 @@ function startMessage() {
 
     classicMusic.interactive = true
     classicMusic.on("click", () => {
+        sound.play('click')
         beatles.style = {...bandsStyles}
         classicMusic.style = {...bandsStyles, dropShadow: true}
         preferedMusic = "classic"
@@ -186,6 +190,7 @@ function startMessage() {
 
     start.interactive = true
     start.on("click", () => {
+        sound.play('click')
         app.ticker.add(gameLoop)
         sound.play(preferedMusic)
         bgc.normalize()
