@@ -1,5 +1,15 @@
-body {
-    overflow: hidden;
-    margin: 0 auto;
-    background-color: black;
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../fonts/PressStart2P.woff2') format('woff2'),
+    url('../fonts/PressStart2P.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P';
 }
