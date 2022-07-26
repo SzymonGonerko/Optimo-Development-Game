@@ -3,7 +3,7 @@
 
 https://optimodevgame.netlify.app/
 
-![optimoDevGame]()
+![optimoDevGame](https://github.com/SzymonGonerko/OptimoDeveloperGame/blob/dd023a6efa38f8dae9ea310f7919b2eabddf36cd/screenshot/front.jpg)
 
 Wytyczne projektu były w języku polskim zatem postanowiłem sporządzić dokumentację w tym języku. Głównym celem projektu jest stworzenie gry rekrutacyjnej polegającej na łapaniu przez gracza ikon jedzenia spodających z góry na dół. Aplikacja została rozszerzona o dodatkowe funkcjonalności takie jak: wybór muzyki, levele trudności, przyśpieszenie gracza, ilość żyć, dzwięki zjadanego przez gracza pożywienia, oraz postać z innej gry (mario). Gra stylizowana na lata 90. Miłej gry!
 
