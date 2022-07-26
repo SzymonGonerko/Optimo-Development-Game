@@ -1,0 +1,15 @@
+{
+    "frames": {
+        "turtleUp": {
+            "frame": { "x": 3, "y": 6, "w": 19, "h": 27  }
+        },
+        "turtleDown": {
+            "frame": { "x": 43, "y": 8, "w": 19, "h": 27  }
+        }
+    },
+    "meta": {
+        "image": "turtle.png",
+        "size": { "w": 148, "h": 42 },
+        "scale": "1"
+    }
+}

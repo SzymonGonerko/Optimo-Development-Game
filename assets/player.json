@@ -1,0 +1,47 @@
+{
+    "frames": {
+        "standing": {
+            "frame": { "x": 20, "y": 0, "w": 55, "h": 75  }
+        },
+
+
+        "firstStepRight": {
+            "frame": { "x": 530, "y": 93, "w": 55, "h": 75  }
+        },
+        "secondStepRight": {
+            "frame": { "x": 182, "y": 178, "w": 55, "h": 75  }
+        },
+        "thirdStepRight": {
+            "frame": { "x": 600, "y": 88, "w": 55, "h": 75 }
+        },
+        "fourthStepRight": {
+            "frame": { "x": 15, "y": 178, "w": 55, "h": 75 }
+        },
+
+        "fivethStepRight": {
+            "frame": { "x": 270, "y": 178, "w": 55, "h": 75  }
+        },
+
+
+        
+
+        "firstStepLeft": {
+            "frame": { "x": 602, "y": 178, "w": 55, "h": 75  }
+        },
+        "secondStepLeft": {
+            "frame": { "x": 15, "y": 257, "w": 55, "h": 75  }
+        },
+        "thirdStepLeft": {
+            "frame": { "x": 437, "y": 178, "w": 55, "h": 75  }
+        },
+        "fourthStepLeft": {
+            "frame": { "x": 520, "y": 178, "w": 55, "h": 75  }
+        }
+
+    },
+    "meta": {
+        "image": "player.png",
+        "size": { "w": 672, "h": 420 },
+        "scale": "1"
+    }
+}
