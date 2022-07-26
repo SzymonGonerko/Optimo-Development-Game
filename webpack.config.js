@@ -27,6 +27,7 @@ module.exports = (env) => {
                         "css-loader",
                     ],
                 },
+                
             ],
         },
         optimization: {
@@ -36,7 +37,11 @@ module.exports = (env) => {
         },
 
         plugins: [
-            new HtmlWebpackPlugin(),
+            new HtmlWebpackPlugin(
+                {
+                    title: "OptimoDev Game",
+                }
+            ),
             new CopyPlugin({
                 patterns: [
                     {
