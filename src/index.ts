@@ -1,4 +1,5 @@
 import * as PIXI from "pixi.js";
+
 import "./style.css";
 import { Application, Loader, Texture, Resource, Graphics} from "pixi.js";
 import { Background } from "./Background"
@@ -20,6 +21,12 @@ import {
     stylesWonTitle,
     stylesTryAgain
 } from "./objectsStyle"
+
+
+let FontFaceObserver = require('fontfaceobserver');
+let font = new FontFaceObserver('Press Start 2P');
+
+
 
 const screenWidth: number = window.innerWidth;
 const screenHeight: number = window.innerHeight;
@@ -87,7 +94,7 @@ const app = new Application({
 
 window.onload = async (): Promise<void> => {
     await loadAssets();
-    setup()
+    font.load().then(() => setup());
 };
 
 
@@ -127,7 +134,7 @@ function setup(): void {
         Texture.from("turtleDown"),
     ]
 
-    szymon = new Player([Texture.from("standing")], "Szymon", screenWidth)
+    szymon = new Player([Texture.from("standing")], "Szymon")
     marioTurtle = new Turtle(turtleSheet["flying" as unknown as number], screenWidth)
     app.stage.addChild(szymon, marioTurtle)
 
@@ -214,7 +221,7 @@ function gameLoop (): void {
     if (snack.y < screenHeight) {
         snack.movingDown()
     }
-    if ( snack.y > 600 && Math.abs(snack.x - szymon.x) < 50) {
+    if ( snack.y > window.innerHeight -180 && Math.abs(snack.x - szymon.x) < 50) {
         points++
         points === 10? messageWin() : null
         szymon.eating(thisOneSnack)

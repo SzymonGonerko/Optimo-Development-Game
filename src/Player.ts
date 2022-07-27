@@ -5,11 +5,11 @@ import { sound } from '@pixi/sound';
     v: number;
     speed: number;
     acc: () => void;
-    constructor(textures: Texture<Resource>[], name: string, screenWidth: number) {
+    constructor(textures: Texture<Resource>[], name: string) {
         super(textures)
-        this.anchor.set(0, -0.85);
+        this.x = window.innerWidth / 2.5
+        this.y = window.innerHeight - 150
         this.scale.set(2)
-        this.position.set(screenWidth / 2.5, 530)
         this.name = name
         this.loop = true
         this.speed = 8
